@@ -1,12 +1,11 @@
-const express = require('express')
-const app = express()
-const port = 7870
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+const port = 7870;
+const v1Routes = require('./v1/routes');
 
-app.get('/', (req, res) => res.send('Hello World!'))
-app.post('/', (req, res) => {
-    console.log('Hi From GitHub')
-    console.log(req);
-    res.sendStatus(200);
-});
+app.use(express.json());
+
+app.use('/api/v1', v1Routes);
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
