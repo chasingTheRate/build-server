@@ -2,7 +2,6 @@ const config = require('./config');
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
-
 const v1Routes = require('./v1/routes');
 
 const port = config.port;
@@ -22,6 +21,8 @@ app.post('/', (req, res) => {
     res.sendStatus(200);
 });
 
-app.listen(port), () => {
-    console.log(`Example app listening on port ${port}!`);
-}
+console.log('hi');
+console.log(`port: ${port}`);
+app.listen(port, () => {
+    console.log(`App app listening on port ${port}!`)
+});

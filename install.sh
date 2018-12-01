@@ -29,7 +29,6 @@ installNmpPackages(){
 }
 
 copyPlistToLaunchAgents(){
-  echo $@
   cp $@ ~/Library/LaunchAgents
 }
 
