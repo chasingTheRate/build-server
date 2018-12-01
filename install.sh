@@ -1,7 +1,5 @@
 #!/bin/sh
 
-source ./config.sh
-
 # FUNCTIONS ################################################
 
 nodeInstalled()

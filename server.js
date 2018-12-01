@@ -1,13 +1,15 @@
 require('dotenv').config()
+const config = require('./config');
 const express = require('express')
 const app = express()
-const port = 7880
 
-app.get('/', (req, res) => res.send('Hello World!'))
+const port = config.port;
+
+app.get('/', (req, res) => res.send('Hello World! test'))
 app.post('/', (req, res) => {
     console.log('Hi From GitHub')
     console.log(req);
     res.sendStatus(200);
 });
 
-app.listen(process.env.PORT || 3001, () => console.log(`Example app listening on port ${process.env.PORT || 3001}!`))
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
