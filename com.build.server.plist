@@ -9,9 +9,16 @@
 		<string>/usr/local/bin/node</string>
 		<string>/Users/mark/Development/Apps/build-server/server.js</string>
 	</array>
+	<key>EnvironmentVariables</key>
+    <dict>
+			<key>PORT</key>
+			<string>7470</string>
+    </dict>
 	<key>RunAtLoad</key>
 	<true/>
 	<key>KeepAlive</key>
 	<true/>
+	<key>StandardOutPath</key>
+	<string>/Users/mark/Development/Apps/build-server/build.server.out.log</string>
 </dict>
 </plist>
