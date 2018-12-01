@@ -40,3 +40,9 @@ Thumbs.db
 ######################
 
 node_modules/
+.env
+
+# MacOS #
+######################
+
+.plist
