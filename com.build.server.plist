@@ -6,19 +6,19 @@
 	<string>com.build.server</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/usr/local/bin/node</string>
-		<string>/Users/mark/Development/Apps/build-server/server.js</string>
+		<string>{PATH TO NODE}</string>
+		<string>{PATH TO START ENTRY FILE}</string>
 	</array>
 	<key>EnvironmentVariables</key>
     <dict>
-			<key>PORT</key>
-			<string>7470</string>
+	<key>PORT</key>
+	<string>{INSERT PORT NUMBER HERE}</string>
     </dict>
 	<key>RunAtLoad</key>
 	<true/>
 	<key>KeepAlive</key>
 	<true/>
 	<key>StandardOutPath</key>
-	<string>/Users/mark/Development/Apps/build-server/build.server.out.log</string>
+	<string>{PATH TO LOG FILE}</string>
 </dict>
 </plist>
